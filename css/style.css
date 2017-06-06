@@ -1,0 +1,116 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding-top: 50px;
+	width: 100%;
+	overflow-x: hidden;
+}
+.top-nav{
+	display: flex;
+	min-height: 50px;
+	overflow: hidden;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	background: black;
+	justify-content: space-around;
+	/*flex-direction: row;*/
+	top: 0;
+	left: 0;
+}
+.top-nav a{
+	text-decoration: none;
+	color: #fff;
+
+}
+.top-nav a:hover{
+	color: #047DBF;
+	border: 1px solid white;
+}
+.top-nav-list {
+	display: flex;
+	list-style: none;
+	font-size: 20px;
+	width: 100%; /*you need to give the list a width or it wont take up all the room*/
+	/*background: red;*/
+	/*margin: auto;*/
+	justify-content: space-around;
+}
+
+.top-nav-list ul li a {
+	display: flex;
+	/*justify-content: space-around;*/
+}
+
+.top-nav-list li{
+	margin: 0px 10px;
+}
+
+.banner {
+	height: 200px;
+	width: 100%;
+	background-image: url(../images/baby.jpeg);
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-row{
+	display: flex;
+	background: black;
+	width: 100%;
+}
+
+.col-2{
+	width: 40%;
+	margin: 5%;
+	background: #f2f1ef;
+
+
+}
+
+.col-2 h2{
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+}
+.col-2 img{
+	width: 100%;
+	height: 300px;
+	padding: 20px;
+	margin: 2px;
+	border: 2px solid black;
+	border-radius: 60%;
+	background: red;
+
+}
+.col-2 p{
+	text-align: center;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	background: black;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	color: white;
+	position: absolute;
+	text-align: center;
+}
+
+@media(max-width: 1200px){
+	.banner{background-image: url(../images/derp.jpeg);}
+	.flex-row{flex-wrap: wrap;}
+	.col-2{width: 90%;}
+}
+
+@media(max-width: 600px){
+	.banner{background-image: url(../images/owl.jpg);}
+	.flex-row{flex-wrap: wrap;}
+	.col-2{width: 90%;}
+}
